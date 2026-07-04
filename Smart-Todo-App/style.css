@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: #1e1e1e;
+    width:550px;
+    padding:20px;
+    border-radius: 10px;
+}
+
+h1{
+    color:white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+}
+
+#taskInput{
+    flex:1;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#addBtn{
+    padding:10px 15px;
+    border: none;
+    background-color: #00b894;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer;
+    font-weight: 700;
+}
+
+#taskList{
+    margin-top: 20px;
+    list-style: none;
+}
+
+#taskList li{
+    background-color: #2d3439;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#taskList li button{
+    background-color: crimson;
+    color:white;
+    border:none;
+    padding:5px 10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+#taskList li span{
+    cursor: pointer;
+    flex:1;
+}
+
+#taskCount{
+    color:white;
+    margin-top:15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+
+
+}
+
+#deadlineTime{
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    width:100px;
+}
+
+.deadline{
+    display:block;
+    font-size:12px;
+    color:#b2bec3;
+    margin-top:4px;
+}
+
+.overdue{
+    border-left:4px solid red;
+    background:#4a1f1f !important;
+}
